@@ -148,7 +148,6 @@ footer{
 }
 .apresentacao p{
     font-size: 20px;
-    
 }
 .contentApresentacao{
     padding-top: 30px;
@@ -178,7 +177,6 @@ footer{
 .apresentacao{
     background-color: #04A4FF;
     color: #E4E4E1;
-    height: 356px;
     box-shadow: -2px 8px 8px grey;
 }
 .capImg{
@@ -202,6 +200,8 @@ h4{
 }
 .experience{
     border-radius: 5%;
+    width: 100%;
+    margin-bottom: 100px;
 }
 .experienceContent{
     border-top-left-radius: 70px;
@@ -212,4 +212,36 @@ h4{
 }
 nav{
     text-align: center;
+}
+@media (max-width: 1600px)
+{
+    .perfil{
+        margin-left: 5px;
+        margin-top: -150px; 
+    }
+   
+}
+@media (max-width: 768px)
+{
+    .perfil{
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+    }
+    header h1{
+        font-size: 48px;
+        margin-top: 130px;
+    }
+    .navega a{
+        font-size: 18px;
+    }
+}
+@media (max-width: 1000px)
+{
+    .perfil{
+        margin-left: 5px;
+        margin-top: -70px;
+        width: 200px;
+    }
+   
 }
