@@ -1,0 +1,247 @@
+body{
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ECECE9;
+}
+h1{
+    font-size: 70px;
+    margin-top: 40px;
+    text-align: right;
+
+    animation: fade 1ms 1s forwards;
+    opacity: 0;
+    
+    overflow: hidden;
+    position: relative;
+}
+h1:after{
+    background-color: #DAD8D4;
+    bottom: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: text-reveal 2s cubic-bezier(0.85, 0, 0.15, 1) forwards;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-size: 32px;
+}
+@keyframes text-reveal{
+    from{
+        transform: translateX(-101%)
+    }
+    to{
+        transform: translateX(101%);
+    }
+}
+@keyframes fade{
+    to{
+        opacity: 1 ;
+    }
+}
+.mountains{
+    width: 100%;
+    display: block;
+}
+.backgroundPerf{
+    width: 100%;
+    background-image: linear-gradient(#1D74DE, #304CC0);
+    position: relative;
+    box-shadow: -2px 8px 8px grey;
+}
+.clouds{
+    width: 20%;
+    animation: cloudsAni 200s infinite alternate;
+}
+@keyframes cloudsAni{
+    from{
+        margin-left: 0px;
+    } to {
+        margin-left: 80%;
+    }
+
+}
+.perfil{
+    width: 18%;
+    float: left;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -100px;
+    border: 5px solid #E4E4E1;
+
+    transition-property: border-radius;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(.15,.89,.85,.26);
+
+}
+.perfil:hover{
+    border-radius: 5%;
+}
+.partition{
+    border: 2px solid #2222
+}
+.classInfo{
+    background-color: #DAD8D4;
+    padding: 50px;
+}
+.navega{
+    background-image: linear-gradient(#1D74DE, #304CC0);
+    color: #ECECE9;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: -2px 8px 8px grey;
+}
+.navega a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+}
+.navega a:hover{
+    color: grey;
+}
+
+
+.radius{
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background-color: #304CC0;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: -2px 8px 8px grey;
+
+
+}
+footer{
+    font-size: 26px;
+    color: #ECECE9 ;
+    background-color: #04A4FF;
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 100px;
+
+
+}
+
+.contato{
+    background-color: #E4E4E1;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: -2px 8px 8px grey;
+    margin-bottom: 50px;
+}
+.contato p{
+    font-size: 20px;
+}
+.apresentacao{
+    background-color: #DAD8D4;
+    border-radius: 20px;
+}
+.apresentacao p{
+    font-size: 20px;
+}
+.contentApresentacao{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px; 
+}
+.contentContato{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px; 
+}
+.space{
+    border-color: #ECECE9;
+    background-color: #ECECE9;
+}
+.spaceP{
+    margin-top: 0px;
+}
+.spaceP p{
+    font-size: 24px;
+}
+.sizeIcon{
+    width: 40px;
+}
+.apresentacao{
+    background-color: #04A4FF;
+    color: #E4E4E1;
+    box-shadow: -2px 8px 8px grey;
+}
+.capImg{
+    filter: invert(100%);
+}
+.spaceApresent{
+    padding-left: 0px;
+    padding-right: 80px;
+    text-align: center;
+}
+h4{
+    margin-bottom: 45px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.carousel-indicators{
+    margin-bottom: -20px;
+}
+.divCarousel{
+    padding-top: 20px;
+}
+.experience{
+    border-radius: 5%;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.experienceContent{
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background-color: #ECECE9;
+    color: #1D74DE;
+    font-size: 20px;
+}
+nav{
+    text-align: center;
+}
+@media (max-width: 1600px)
+{
+    .perfil{
+        margin-left: 5px;
+        margin-top: -150px; 
+    }
+   
+}
+@media (max-width: 768px)
+{
+    .perfil{
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+    }
+    header h1{
+        font-size: 48px;
+        margin-top: 130px;
+    }
+    .navega a{
+        font-size: 18px;
+    }
+}
+@media (max-width: 1000px)
+{
+    .perfil{
+        margin-left: 5px;
+        margin-top: -70px;
+        width: 200px;
+    }
+   
+}
