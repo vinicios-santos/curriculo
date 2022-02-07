@@ -145,6 +145,7 @@ footer{
 .apresentacao{
     background-color: #DAD8D4;
     border-radius: 20px;
+    padding-top: 16px;
 }
 .apresentacao p{
     font-size: 20px;
